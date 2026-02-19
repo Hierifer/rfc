@@ -148,12 +148,13 @@ public class LevelConverter : EditorWindow
 
                 int levelNum = int.Parse(key.Replace("level", ""));
                 
-                // Convert the object back to JSON for JsonUtility to parse into strong type
-                string levelJson = MiniJSON.Json.Serialize(dict[key]);
-                JsonLevel jsonLevel = JsonUtility.FromJson<JsonLevel>(levelJson);
-                
-                CreateLevelAsset(levelNum, jsonLevel);
-                successCount++;
+                // Use MiniJSON dict directly instead of converting to string and using JsonUtility
+                // This avoids JsonUtility's limitation with nested lists (List<List<T>>)
+                if (dict[key] is Dictionary<string, object> levelData)
+                {
+                    CreateLevelAsset(levelNum, levelData);
+                    successCount++;
+                }
             }
 
             AssetDatabase.Refresh();
@@ -166,7 +167,7 @@ public class LevelConverter : EditorWindow
         }
     }
 
-    private void CreateLevelAsset(int levelNumber, JsonLevel jsonLevel)
+    private void CreateLevelAsset(int levelNumber, Dictionary<string, object> jsonLevel)
     {
         LevelData level = ScriptableObject.CreateInstance<LevelData>();
 
@@ -179,10 +180,14 @@ public class LevelConverter : EditorWindow
         level.boxes = new List<Vector2Int>();
         level.cloudFogGroups = new List<CloudFogGroupData>();
 
-        // Parse player and exit (required fields)
-        if (jsonLevel.player != null)
+        // Parse player
+        if (jsonLevel.ContainsKey("player"))
         {
-            level.playerStart = new Vector2Int(jsonLevel.player.col, jsonLevel.player.row);
+            var p = jsonLevel["player"] as Dictionary<string, object>;
+            level.playerStart = new Vector2Int(
+                System.Convert.ToInt32(p["col"]), 
+                System.Convert.ToInt32(p["row"])
+            );
         }
         else
         {
@@ -190,9 +195,14 @@ public class LevelConverter : EditorWindow
             level.playerStart = new Vector2Int(9, 11);
         }
 
-        if (jsonLevel.exit != null)
+        // Parse exit
+        if (jsonLevel.ContainsKey("exit"))
         {
-            level.exitPos = new Vector2Int(jsonLevel.exit.col, jsonLevel.exit.row);
+            var e = jsonLevel["exit"] as Dictionary<string, object>;
+            level.exitPos = new Vector2Int(
+                System.Convert.ToInt32(e["col"]), 
+                System.Convert.ToInt32(e["row"])
+            );
         }
         else
         {
@@ -200,85 +210,85 @@ public class LevelConverter : EditorWindow
             level.exitPos = new Vector2Int(9, 0);
         }
 
-        // Parse snakes
-        if (jsonLevel.snakes != null)
+        // Helper to parse list of positions
+        void ParsePositions(string key, List<Vector2Int> targetList)
         {
-            foreach (var snake in jsonLevel.snakes)
+            if (jsonLevel.ContainsKey(key))
             {
-                Direction dir = snake.direction switch
+                var list = jsonLevel[key] as List<object>;
+                if (list != null)
                 {
-                    "up" => Direction.Up,
-                    "down" => Direction.Down,
-                    "left" => Direction.Left,
-                    "right" => Direction.Right,
-                    _ => Direction.Right
-                };
-                level.snakes.Add(new SnakeSpawn(new Vector2Int(snake.col, snake.row), dir));
-            }
-        }
-
-        // Parse pushable stones
-        if (jsonLevel.pushableStones != null)
-        {
-            foreach (var pos in jsonLevel.pushableStones)
-            {
-                level.pushableStones.Add(new Vector2Int(pos.col, pos.row));
-            }
-        }
-
-        // Parse fixed stones
-        if (jsonLevel.fixedStones != null)
-        {
-            foreach (var pos in jsonLevel.fixedStones)
-            {
-                level.fixedStones.Add(new Vector2Int(pos.col, pos.row));
-            }
-        }
-
-        // Parse dynamite
-        if (jsonLevel.dynamite != null)
-        {
-            foreach (var pos in jsonLevel.dynamite)
-            {
-                level.dynamite.Add(new Vector2Int(pos.col, pos.row));
-            }
-        }
-
-        // Parse cracked stones
-        if (jsonLevel.crackedStones != null)
-        {
-            foreach (var pos in jsonLevel.crackedStones)
-            {
-                level.crackedStones.Add(new Vector2Int(pos.col, pos.row));
-            }
-        }
-
-        // Parse boxes
-        if (jsonLevel.boxes != null)
-        {
-            foreach (var pos in jsonLevel.boxes)
-            {
-                level.boxes.Add(new Vector2Int(pos.col, pos.row));
-            }
-        }
-
-        // Parse cloud/fog groups
-        if (jsonLevel.cloudFogGroups != null)
-        {
-            foreach (var group in jsonLevel.cloudFogGroups)
-            {
-                if (group == null || group.Count == 0)
-                    continue;
-
-                CloudFogGroupData groupData = new CloudFogGroupData();
-                groupData.positions = new List<Vector2Int>();
-
-                foreach (var pos in group)
-                {
-                    groupData.positions.Add(new Vector2Int(pos.col, pos.row));
+                    foreach (var item in list)
+                    {
+                        var pos = item as Dictionary<string, object>;
+                        targetList.Add(new Vector2Int(
+                            System.Convert.ToInt32(pos["col"]), 
+                            System.Convert.ToInt32(pos["row"])
+                        ));
+                    }
                 }
+            }
+        }
 
-                level.cloudFogGroups.Add(groupData);
+        ParsePositions("pushableStones", level.pushableStones);
+        ParsePositions("fixedStones", level.fixedStones);
+        ParsePositions("dynamite", level.dynamite);
+        ParsePositions("crackedStones", level.crackedStones);
+        ParsePositions("boxes", level.boxes);
+
+        // Parse snakes
+        if (jsonLevel.ContainsKey("snakes"))
+        {
+            var snakes = jsonLevel["snakes"] as List<object>;
+            if (snakes != null)
+            {
+                foreach (var item in snakes)
+                {
+                    var s = item as Dictionary<string, object>;
+                    string dirStr = s.ContainsKey("direction") ? s["direction"] as string : "right";
+                    
+                    Direction dir = dirStr switch
+                    {
+                        "up" => Direction.Up,
+                        "down" => Direction.Down,
+                        "left" => Direction.Left,
+                        "right" => Direction.Right,
+                        _ => Direction.Right
+                    };
+                    
+                    level.snakes.Add(new SnakeSpawn(
+                        new Vector2Int(System.Convert.ToInt32(s["col"]), System.Convert.ToInt32(s["row"])), 
+                        dir
+                    ));
+                }
+            }
+        }
+
+        // Parse cloud/fog groups (Nested List)
+        if (jsonLevel.ContainsKey("cloudFogGroups"))
+        {
+            var groups = jsonLevel["cloudFogGroups"] as List<object>;
+            if (groups != null)
+            {
+                foreach (var g in groups)
+                {
+                    var groupList = g as List<object>;
+                    if (groupList == null || groupList.Count == 0) continue;
+
+                    CloudFogGroupData groupData = new CloudFogGroupData();
+                    groupData.positions = new List<Vector2Int>();
+
+                    foreach (var item in groupList)
+                    {
+                        var pos = item as Dictionary<string, object>;
+                        groupData.positions.Add(new Vector2Int(
+                            System.Convert.ToInt32(pos["col"]), 
+                            System.Convert.ToInt32(pos["row"])
+                        ));
+                    }
+
+                    level.cloudFogGroups.Add(groupData);
+                }
             }
         }
 

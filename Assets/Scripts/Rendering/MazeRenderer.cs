@@ -137,6 +137,14 @@ namespace MazeGame
                 {
                     CellType cell = state.gridManager.GetCell(row, col);
                     GameObject tileObj = tileObjects[row, col];
+
+                    // 只处理静态物体（地板、墙、出口、裂缝、云雾等），跳过动态物体（石头、箱子）
+                    // 动态物体在 StoneObjects 和 BoxObjects 中单独渲染，避免重叠
+                    if (cell == CellType.Stone || cell == CellType.Box)
+                    {
+                        cell = CellType.Floor; // 动态物体下面应该是地板
+                    }
+
                     SpriteRenderer sr = tileObj.GetComponent<SpriteRenderer>();
 
                     if (sr != null)
@@ -410,7 +418,7 @@ namespace MazeGame
             // Set sorting order - movable objects above floor tiles
             sr.sortingOrder = 1;
 
-            entity.transform.position = new Vector3(worldPos.x, worldPos.y, 0);
+            entity.transform.position = new Vector3(worldPos.x, worldPos.y, -1);
 
             // 使用计算好的世界空间瓦片大小
             entity.transform.localScale = Vector3.one * this.worldTileSize;
