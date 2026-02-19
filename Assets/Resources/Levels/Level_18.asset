@@ -74,4 +74,10 @@ MonoBehaviour:
   - {x: 2, y: 4}
   - {x: 3, y: 5}
   - {x: 4, y: 1}
-  cloudFogGroups: []
+  cloudFogGroups:
+  - positions:
+    - {x: 4, y: 5}
+    - {x: 2, y: 7}
+  - positions:
+    - {x: 13, y: 4}
+    - {x: 9, y: 2}

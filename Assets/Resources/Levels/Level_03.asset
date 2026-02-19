@@ -51,4 +51,10 @@ MonoBehaviour:
   dynamite: []
   crackedStones: []
   boxes: []
-  cloudFogGroups: []
+  cloudFogGroups:
+  - positions:
+    - {x: 5, y: 3}
+    - {x: 9, y: 3}
+  - positions:
+    - {x: 13, y: 3}
+    - {x: 9, y: 4}

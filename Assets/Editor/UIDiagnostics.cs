@@ -27,6 +27,13 @@ public class UIDiagnostics : EditorWindow
 
         EditorGUILayout.Space();
 
+        if (GUILayout.Button("Test Button References", GUILayout.Height(30)))
+        {
+            TestButtonReferences();
+        }
+
+        EditorGUILayout.Space();
+
         if (GUILayout.Button("Test Show Level Select", GUILayout.Height(30)))
         {
             TestShowLevelSelect();
@@ -76,6 +83,26 @@ public class UIDiagnostics : EditorWindow
             return $"❌ {fieldName}: NOT ASSIGNED";
         }
         return $"✓ {fieldName}: OK";
+    }
+
+    private void TestButtonReferences()
+    {
+        if (!Application.isPlaying)
+        {
+            EditorUtility.DisplayDialog("Error", "Please enter Play mode first!", "OK");
+            return;
+        }
+
+        UIManager uiManager = FindObjectOfType<UIManager>();
+
+        if (uiManager == null)
+        {
+            EditorUtility.DisplayDialog("Error", "UIManager not found!", "OK");
+            return;
+        }
+
+        uiManager.TestButton();
+        Debug.Log("TestButton called - check Console for details");
     }
 
     private void TestShowLevelSelect()

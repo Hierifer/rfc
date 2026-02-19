@@ -86,4 +86,8 @@ MonoBehaviour:
   boxes:
   - {x: 9, y: 6}
   - {x: 2, y: 4}
-  cloudFogGroups: []
+  cloudFogGroups:
+  - positions:
+    - {x: 5, y: 7}
+    - {x: 15, y: 4}
+    - {x: 15, y: 5}

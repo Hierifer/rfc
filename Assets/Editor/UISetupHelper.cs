@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using MazeGame;
 
 /// <summary>
@@ -37,8 +38,37 @@ public class UISetupHelper : EditorWindow
         );
     }
 
+    /// <summary>
+    /// 清理旧的 UI 元素，避免重复创建
+    /// </summary>
+    private void CleanupOldUI()
+    {
+        Canvas canvas = FindObjectOfType<Canvas>();
+        if (canvas != null)
+        {
+            // 删除旧的 LevelSelectPanel
+            Transform oldPanel = canvas.transform.Find("LevelSelectPanel");
+            if (oldPanel != null)
+            {
+                Debug.Log("Deleting old LevelSelectPanel");
+                DestroyImmediate(oldPanel.gameObject);
+            }
+
+            // 删除旧的 UI_Panel
+            Transform oldUIPanel = canvas.transform.Find("UI_Panel");
+            if (oldUIPanel != null)
+            {
+                Debug.Log("Deleting old UI_Panel");
+                DestroyImmediate(oldUIPanel.gameObject);
+            }
+        }
+    }
+
     private void CreateGameUI()
     {
+        // 先清理旧的 UI 元素，避免重复
+        CleanupOldUI();
+
         // Find or create Canvas
         Canvas canvas = FindObjectOfType<Canvas>();
         GameObject canvasObj;
@@ -53,11 +83,19 @@ public class UISetupHelper : EditorWindow
             scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
             scaler.referenceResolution = new Vector2(1920, 1080);
 
-            canvasObj.AddComponent<GraphicRaycaster>();
+            GraphicRaycaster raycaster = canvasObj.AddComponent<GraphicRaycaster>();
+            Debug.Log("Canvas created with GraphicRaycaster");
         }
         else
         {
             canvasObj = canvas.gameObject;
+
+            // Ensure GraphicRaycaster exists
+            if (canvasObj.GetComponent<GraphicRaycaster>() == null)
+            {
+                canvasObj.AddComponent<GraphicRaycaster>();
+                Debug.Log("GraphicRaycaster added to existing Canvas");
+            }
         }
 
         // Create UI Panel (left sidebar)
@@ -85,7 +123,7 @@ public class UISetupHelper : EditorWindow
         Text levelText = levelTextObj.AddComponent<Text>();
         levelText.text = "关卡 1/20";
         levelText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-        levelText.fontSize = 24;
+        levelText.fontSize = 32;
         levelText.color = Color.white;
         levelText.alignment = TextAnchor.MiddleLeft;
 
@@ -108,7 +146,7 @@ public class UISetupHelper : EditorWindow
         Text dynamiteText = dynamiteTextObj.AddComponent<Text>();
         dynamiteText.text = "雷管: 0";
         dynamiteText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-        dynamiteText.fontSize = 20;
+        dynamiteText.fontSize = 28;
         dynamiteText.color = new Color(0.961f, 0.620f, 0.043f); // Orange color for dynamite
         dynamiteText.alignment = TextAnchor.MiddleLeft;
 
@@ -130,6 +168,7 @@ public class UISetupHelper : EditorWindow
 
         Image buttonImage = levelSelectButtonObj.AddComponent<Image>();
         buttonImage.color = new Color(0.2f, 0.3f, 0.4f, 0.9f);
+        buttonImage.raycastTarget = true; // 确保可以接收点击
 
         Button levelSelectBtn = levelSelectButtonObj.AddComponent<Button>();
         ColorBlock colors = levelSelectBtn.colors;
@@ -149,7 +188,7 @@ public class UISetupHelper : EditorWindow
         Text buttonText = buttonTextObj.AddComponent<Text>();
         buttonText.text = "选关";
         buttonText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-        buttonText.fontSize = 18;
+        buttonText.fontSize = 24;
         buttonText.color = Color.white;
         buttonText.alignment = TextAnchor.MiddleCenter;
 
@@ -164,6 +203,7 @@ public class UISetupHelper : EditorWindow
 
         Image panelImage = levelSelectPanelObj.AddComponent<Image>();
         panelImage.color = new Color(0, 0, 0, 0.8f);
+        panelImage.raycastTarget = true; // 阻挡背后的点击
 
         // Create panel content
         GameObject contentObj = new GameObject("Content");
@@ -178,6 +218,7 @@ public class UISetupHelper : EditorWindow
 
         Image contentImage = contentObj.AddComponent<Image>();
         contentImage.color = new Color(0.1f, 0.15f, 0.2f, 1f);
+        contentImage.raycastTarget = true; // 确保内容区域可以接收点击
 
         // Create title
         GameObject titleObj = new GameObject("Title");
@@ -193,7 +234,7 @@ public class UISetupHelper : EditorWindow
         Text titleText = titleObj.AddComponent<Text>();
         titleText.text = "选择关卡";
         titleText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-        titleText.fontSize = 28;
+        titleText.fontSize = 36;
         titleText.color = Color.white;
         titleText.alignment = TextAnchor.MiddleCenter;
 
@@ -210,8 +251,12 @@ public class UISetupHelper : EditorWindow
 
         Image closeImage = closeButtonObj.AddComponent<Image>();
         closeImage.color = new Color(0.8f, 0.2f, 0.2f, 1f);
+        closeImage.raycastTarget = true; // 确保可以接收点击
 
         Button closeButton = closeButtonObj.AddComponent<Button>();
+
+        // 添加关闭面板脚本
+        ClosePanelButton closePanelScript = closeButtonObj.AddComponent<ClosePanelButton>();
 
         GameObject closeTextObj = new GameObject("Text");
         closeTextObj.transform.SetParent(closeButtonObj.transform, false);
@@ -255,6 +300,7 @@ public class UISetupHelper : EditorWindow
 
         Image viewportImage = viewportObj.AddComponent<Image>();
         viewportImage.color = Color.clear;
+        viewportImage.raycastTarget = false; // 不阻挡点击，让点击穿透到按钮
 
         // Create content container for buttons
         GameObject buttonContainerObj = new GameObject("ButtonContainer");
@@ -290,6 +336,7 @@ public class UISetupHelper : EditorWindow
 
         Image prefabImage = levelButtonPrefab.AddComponent<Image>();
         prefabImage.color = new Color(0.3f, 0.4f, 0.5f, 1f);
+        prefabImage.raycastTarget = true; // 确保可以接收点击
 
         Button prefabButton = levelButtonPrefab.AddComponent<Button>();
 
@@ -304,12 +351,23 @@ public class UISetupHelper : EditorWindow
         Text prefabText = prefabTextObj.AddComponent<Text>();
         prefabText.text = "1";
         prefabText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-        prefabText.fontSize = 24;
+        prefabText.fontSize = 28;
         prefabText.color = Color.white;
         prefabText.alignment = TextAnchor.MiddleCenter;
 
         // Deactivate prefab so it doesn't appear in the scene
         levelButtonPrefab.SetActive(false);
+
+        // 确保所有中间对象都是激活的（在隐藏面板之前）
+        contentObj.SetActive(true);
+        scrollViewObj.SetActive(true);
+        viewportObj.SetActive(true);
+        buttonContainerObj.SetActive(true);
+        Debug.Log("All intermediate UI objects activated");
+
+        // 初始隐藏选关面板（这会使整个层级变为 inactive）
+        levelSelectPanelObj.SetActive(false);
+        Debug.Log("LevelSelectPanel created and hidden (will be shown when clicking level select button)");
 
         // Add UIManager to Canvas
         UIManager uiManager = canvasObj.GetComponent<UIManager>();
@@ -329,13 +387,15 @@ public class UISetupHelper : EditorWindow
         serializedUI.FindProperty("levelButtonPrefab").objectReferenceValue = levelButtonPrefab;
         serializedUI.ApplyModifiedProperties();
 
-        // Setup close button listener
-        closeButton.onClick.AddListener(() => {
-            if (uiManager != null)
-            {
-                uiManager.HideLevelSelect();
-            }
-        });
+        // Setup close button - 使用 SerializedObject 设置引用
+        closePanelScript = closeButtonObj.GetComponent<ClosePanelButton>();
+        if (closePanelScript != null)
+        {
+            SerializedObject serializedCloseBtn = new SerializedObject(closePanelScript);
+            serializedCloseBtn.FindProperty("panelToClose").objectReferenceValue = levelSelectPanelObj;
+            serializedCloseBtn.ApplyModifiedProperties();
+            Debug.Log("Close button configured to close level select panel");
+        }
 
         // Find GameManager and link UIManager
         GameManager gameManager = FindObjectOfType<GameManager>();
@@ -344,6 +404,16 @@ public class UISetupHelper : EditorWindow
             SerializedObject serializedGM = new SerializedObject(gameManager);
             serializedGM.FindProperty("uiManager").objectReferenceValue = uiManager;
             serializedGM.ApplyModifiedProperties();
+        }
+
+        // Ensure EventSystem exists for UI interactions
+        EventSystem eventSystem = FindObjectOfType<EventSystem>();
+        if (eventSystem == null)
+        {
+            GameObject eventSystemObj = new GameObject("EventSystem");
+            eventSystemObj.AddComponent<EventSystem>();
+            eventSystemObj.AddComponent<StandaloneInputModule>();
+            Debug.Log("EventSystem created");
         }
 
         EditorUtility.SetDirty(canvasObj);

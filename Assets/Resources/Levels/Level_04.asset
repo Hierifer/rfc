@@ -45,4 +45,10 @@ MonoBehaviour:
   boxes:
   - {x: 5, y: 3}
   - {x: 16, y: 6}
-  cloudFogGroups: []
+  cloudFogGroups:
+  - positions:
+    - {x: 16, y: 5}
+    - {x: 8, y: 6}
+  - positions:
+    - {x: 2, y: 3}
+    - {x: 16, y: 8}

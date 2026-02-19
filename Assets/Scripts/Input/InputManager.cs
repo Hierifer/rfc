@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace MazeGame
 {
@@ -90,6 +91,13 @@ namespace MazeGame
             // 鼠标左键点击
             if (Input.GetMouseButtonDown(0))
             {
+                // 如果鼠标点击在UI上，不处理游戏内的点击
+                if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+                {
+                    Debug.Log("Clicked on UI, ignored game input");
+                    return;
+                }
+
                 Vector2 mousePos = Input.mousePosition;
                 HandleTapOrClick(mousePos);
             }
@@ -105,6 +113,14 @@ namespace MazeGame
             if (Input.touchCount == 0) return;
 
             Touch touch = Input.GetTouch(0);
+
+            // 检查触摸是否在UI上
+            if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject(touch.fingerId))
+            {
+                // 如果是按下的瞬间在UI上，记录但不处理游戏逻辑
+                // 这里简单处理：只要手指在UI上操作，就忽略游戏操作
+                return;
+            }
 
             if (touch.phase == TouchPhase.Began)
             {
