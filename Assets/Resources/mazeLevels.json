@@ -1,0 +1,4185 @@
+{
+  "level1": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [],
+    "pushableStones": [
+      {
+        "row": 2,
+        "col": 14
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 2,
+        "col": 8
+      },
+      {
+        "row": 3,
+        "col": 8
+      },
+      {
+        "row": 4,
+        "col": 8
+      },
+      {
+        "row": 4,
+        "col": 10
+      },
+      {
+        "row": 3,
+        "col": 10
+      },
+      {
+        "row": 2,
+        "col": 10
+      },
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 4,
+        "col": 3
+      },
+      {
+        "row": 3,
+        "col": 3
+      },
+      {
+        "row": 3,
+        "col": 5
+      },
+      {
+        "row": 4,
+        "col": 5
+      },
+      {
+        "row": 3,
+        "col": 13
+      },
+      {
+        "row": 4,
+        "col": 13
+      },
+      {
+        "row": 5,
+        "col": 3
+      },
+      {
+        "row": 5,
+        "col": 4
+      },
+      {
+        "row": 5,
+        "col": 5
+      },
+      {
+        "row": 5,
+        "col": 13
+      },
+      {
+        "row": 5,
+        "col": 14
+      },
+      {
+        "row": 5,
+        "col": 15
+      },
+      {
+        "row": 3,
+        "col": 15
+      },
+      {
+        "row": 4,
+        "col": 15
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 4,
+        "col": 4
+      },
+      {
+        "row": 4,
+        "col": 14
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 4,
+        "col": 9
+      },
+      {
+        "row": 3,
+        "col": 9
+      }
+    ],
+    "boxes": [
+      {
+        "row": 2,
+        "col": 4
+      }
+    ]
+  },
+  "level2": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 6,
+        "col": 2,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 8,
+        "col": 4
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 4,
+        "col": 3
+      },
+      {
+        "row": 5,
+        "col": 3
+      },
+      {
+        "row": 6,
+        "col": 3
+      },
+      {
+        "row": 7,
+        "col": 3
+      },
+      {
+        "row": 1,
+        "col": 4
+      },
+      {
+        "row": 2,
+        "col": 4
+      },
+      {
+        "row": 7,
+        "col": 5
+      },
+      {
+        "row": 7,
+        "col": 2
+      },
+      {
+        "row": 7,
+        "col": 1
+      },
+      {
+        "row": 6,
+        "col": 5
+      },
+      {
+        "row": 2,
+        "col": 10
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 2,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 13
+      },
+      {
+        "row": 2,
+        "col": 13
+      },
+      {
+        "row": 3,
+        "col": 13
+      },
+      {
+        "row": 4,
+        "col": 13
+      },
+      {
+        "row": 5,
+        "col": 13
+      }
+    ],
+    "dynamite": [],
+    "crackedStones": [],
+    "boxes": [
+      {
+        "row": 3,
+        "col": 9
+      }
+    ]
+  },
+  "level3": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 2,
+        "col": 11,
+        "direction": "right"
+      },
+      {
+        "row": 2,
+        "col": 7,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 5,
+        "col": 8
+      },
+      {
+        "row": 5,
+        "col": 10
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 2,
+        "col": 8
+      },
+      {
+        "row": 4,
+        "col": 8
+      },
+      {
+        "row": 3,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 2,
+        "col": 10
+      },
+      {
+        "row": 3,
+        "col": 10
+      },
+      {
+        "row": 4,
+        "col": 10
+      },
+      {
+        "row": 4,
+        "col": 16
+      },
+      {
+        "row": 4,
+        "col": 17
+      },
+      {
+        "row": 3,
+        "col": 11
+      },
+      {
+        "row": 3,
+        "col": 12
+      },
+      {
+        "row": 3,
+        "col": 14
+      },
+      {
+        "row": 3,
+        "col": 16
+      },
+      {
+        "row": 3,
+        "col": 17
+      },
+      {
+        "row": 5,
+        "col": 16
+      },
+      {
+        "row": 3,
+        "col": 1
+      },
+      {
+        "row": 3,
+        "col": 2
+      },
+      {
+        "row": 4,
+        "col": 2
+      },
+      {
+        "row": 5,
+        "col": 2
+      },
+      {
+        "row": 4,
+        "col": 4
+      },
+      {
+        "row": 3,
+        "col": 4
+      },
+      {
+        "row": 3,
+        "col": 6
+      },
+      {
+        "row": 3,
+        "col": 7
+      },
+      {
+        "row": 4,
+        "col": 14
+      }
+    ],
+    "dynamite": [],
+    "crackedStones": [],
+    "boxes": [],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 3,
+          "col": 5
+        },
+        {
+          "row": 3,
+          "col": 9
+        }
+      ],
+      [
+        {
+          "row": 3,
+          "col": 13
+        },
+        {
+          "row": 4,
+          "col": 9
+        }
+      ]
+    ]
+  },
+  "level4": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 5,
+        "col": 8,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 5,
+        "col": 7
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 3,
+        "col": 9
+      },
+      {
+        "row": 4,
+        "col": 9
+      },
+      {
+        "row": 2,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 5,
+        "col": 9
+      },
+      {
+        "row": 1,
+        "col": 6
+      },
+      {
+        "row": 1,
+        "col": 7
+      },
+      {
+        "row": 3,
+        "col": 6
+      },
+      {
+        "row": 4,
+        "col": 7
+      },
+      {
+        "row": 9,
+        "col": 15
+      },
+      {
+        "row": 8,
+        "col": 15
+      },
+      {
+        "row": 7,
+        "col": 15
+      },
+      {
+        "row": 6,
+        "col": 15
+      },
+      {
+        "row": 6,
+        "col": 17
+      },
+      {
+        "row": 10,
+        "col": 16
+      },
+      {
+        "row": 9,
+        "col": 17
+      },
+      {
+        "row": 7,
+        "col": 17
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 8,
+        "col": 17
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 2,
+        "col": 9
+      }
+    ],
+    "boxes": [
+      {
+        "row": 3,
+        "col": 5
+      },
+      {
+        "row": 6,
+        "col": 16
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 5,
+          "col": 16
+        },
+        {
+          "row": 6,
+          "col": 8
+        }
+      ],
+      [
+        {
+          "row": 3,
+          "col": 2
+        },
+        {
+          "row": 8,
+          "col": 16
+        }
+      ]
+    ]
+  },
+  "level5": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 7,
+        "col": 16,
+        "direction": "right"
+      },
+      {
+        "row": 5,
+        "col": 1,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 8,
+        "col": 14
+      },
+      {
+        "row": 8,
+        "col": 3
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 2,
+        "col": 10
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 3,
+        "col": 13
+      },
+      {
+        "row": 4,
+        "col": 13
+      },
+      {
+        "row": 3,
+        "col": 15
+      },
+      {
+        "row": 4,
+        "col": 15
+      },
+      {
+        "row": 5,
+        "col": 15
+      },
+      {
+        "row": 7,
+        "col": 15
+      },
+      {
+        "row": 8,
+        "col": 15
+      },
+      {
+        "row": 8,
+        "col": 16
+      },
+      {
+        "row": 8,
+        "col": 17
+      },
+      {
+        "row": 8,
+        "col": 13
+      },
+      {
+        "row": 7,
+        "col": 13
+      },
+      {
+        "row": 3,
+        "col": 7
+      },
+      {
+        "row": 3,
+        "col": 6
+      },
+      {
+        "row": 3,
+        "col": 5
+      },
+      {
+        "row": 3,
+        "col": 4
+      },
+      {
+        "row": 5,
+        "col": 4
+      },
+      {
+        "row": 6,
+        "col": 5
+      },
+      {
+        "row": 7,
+        "col": 6
+      },
+      {
+        "row": 7,
+        "col": 7
+      },
+      {
+        "row": 5,
+        "col": 7
+      },
+      {
+        "row": 7,
+        "col": 8
+      },
+      {
+        "row": 6,
+        "col": 8
+      },
+      {
+        "row": 5,
+        "col": 8
+      },
+      {
+        "row": 7,
+        "col": 2
+      },
+      {
+        "row": 6,
+        "col": 2
+      },
+      {
+        "row": 3,
+        "col": 8
+      },
+      {
+        "row": 2,
+        "col": 8
+      },
+      {
+        "row": 2,
+        "col": 15
+      },
+      {
+        "row": 2,
+        "col": 16
+      },
+      {
+        "row": 2,
+        "col": 17
+      },
+      {
+        "row": 2,
+        "col": 13
+      },
+      {
+        "row": 7,
+        "col": 1
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 3,
+        "col": 3
+      },
+      {
+        "row": 1,
+        "col": 17
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 2,
+        "col": 9
+      },
+      {
+        "row": 3,
+        "col": 9
+      }
+    ],
+    "boxes": [
+      {
+        "row": 5,
+        "col": 13
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 5,
+          "col": 2
+        },
+        {
+          "row": 4,
+          "col": 8
+        }
+      ],
+      [
+        {
+          "row": 6,
+          "col": 13
+        },
+        {
+          "row": 1,
+          "col": 13
+        },
+        {
+          "row": 6,
+          "col": 15
+        }
+      ]
+    ]
+  },
+  "level6": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [],
+    "pushableStones": [
+      {
+        "row": 6,
+        "col": 12
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 2,
+        "col": 10
+      },
+      {
+        "row": 3,
+        "col": 10
+      },
+      {
+        "row": 4,
+        "col": 10
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 2,
+        "col": 8
+      },
+      {
+        "row": 3,
+        "col": 8
+      },
+      {
+        "row": 4,
+        "col": 8
+      },
+      {
+        "row": 5,
+        "col": 8
+      },
+      {
+        "row": 5,
+        "col": 10
+      },
+      {
+        "row": 1,
+        "col": 12
+      },
+      {
+        "row": 1,
+        "col": 13
+      },
+      {
+        "row": 1,
+        "col": 14
+      },
+      {
+        "row": 1,
+        "col": 15
+      },
+      {
+        "row": 1,
+        "col": 16
+      },
+      {
+        "row": 1,
+        "col": 17
+      },
+      {
+        "row": 2,
+        "col": 12
+      },
+      {
+        "row": 3,
+        "col": 12
+      },
+      {
+        "row": 4,
+        "col": 12
+      },
+      {
+        "row": 5,
+        "col": 12
+      },
+      {
+        "row": 7,
+        "col": 13
+      },
+      {
+        "row": 7,
+        "col": 14
+      },
+      {
+        "row": 7,
+        "col": 16
+      },
+      {
+        "row": 8,
+        "col": 16
+      },
+      {
+        "row": 8,
+        "col": 17
+      },
+      {
+        "row": 3,
+        "col": 14
+      },
+      {
+        "row": 4,
+        "col": 14
+      },
+      {
+        "row": 4,
+        "col": 15
+      },
+      {
+        "row": 4,
+        "col": 16
+      },
+      {
+        "row": 3,
+        "col": 16
+      },
+      {
+        "row": 5,
+        "col": 7
+      },
+      {
+        "row": 4,
+        "col": 6
+      },
+      {
+        "row": 3,
+        "col": 6
+      },
+      {
+        "row": 2,
+        "col": 6
+      },
+      {
+        "row": 1,
+        "col": 6
+      },
+      {
+        "row": 1,
+        "col": 4
+      },
+      {
+        "row": 2,
+        "col": 4
+      },
+      {
+        "row": 3,
+        "col": 4
+      },
+      {
+        "row": 4,
+        "col": 4
+      },
+      {
+        "row": 1,
+        "col": 2
+      },
+      {
+        "row": 2,
+        "col": 2
+      },
+      {
+        "row": 3,
+        "col": 2
+      },
+      {
+        "row": 4,
+        "col": 2
+      },
+      {
+        "row": 6,
+        "col": 1
+      },
+      {
+        "row": 6,
+        "col": 5
+      },
+      {
+        "row": 6,
+        "col": 6
+      },
+      {
+        "row": 9,
+        "col": 13
+      },
+      {
+        "row": 10,
+        "col": 14
+      },
+      {
+        "row": 10,
+        "col": 15
+      },
+      {
+        "row": 10,
+        "col": 16
+      },
+      {
+        "row": 9,
+        "col": 16
+      },
+      {
+        "row": 9,
+        "col": 12
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 7,
+        "col": 17
+      },
+      {
+        "row": 3,
+        "col": 15
+      },
+      {
+        "row": 1,
+        "col": 5
+      },
+      {
+        "row": 7,
+        "col": 3
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 2,
+        "col": 9
+      },
+      {
+        "row": 3,
+        "col": 9
+      },
+      {
+        "row": 4,
+        "col": 9
+      },
+      {
+        "row": 5,
+        "col": 9
+      }
+    ],
+    "boxes": [
+      {
+        "row": 6,
+        "col": 2
+      },
+      {
+        "row": 6,
+        "col": 3
+      },
+      {
+        "row": 6,
+        "col": 4
+      },
+      {
+        "row": 8,
+        "col": 12
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 9,
+          "col": 15
+        },
+        {
+          "row": 7,
+          "col": 4
+        },
+        {
+          "row": 8,
+          "col": 4
+        },
+        {
+          "row": 8,
+          "col": 3
+        },
+        {
+          "row": 8,
+          "col": 2
+        },
+        {
+          "row": 7,
+          "col": 2
+        }
+      ],
+      [
+        {
+          "row": 1,
+          "col": 3
+        },
+        {
+          "row": 5,
+          "col": 6
+        },
+        {
+          "row": 7,
+          "col": 15
+        }
+      ]
+    ]
+  },
+  "level7": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 5,
+        "col": 7,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 5,
+        "col": 8
+      },
+      {
+        "row": 5,
+        "col": 10
+      },
+      {
+        "row": 8,
+        "col": 2
+      },
+      {
+        "row": 5,
+        "col": 2
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 2,
+        "col": 10
+      },
+      {
+        "row": 3,
+        "col": 10
+      },
+      {
+        "row": 4,
+        "col": 10
+      },
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 3,
+        "col": 8
+      },
+      {
+        "row": 4,
+        "col": 8
+      },
+      {
+        "row": 6,
+        "col": 10
+      },
+      {
+        "row": 6,
+        "col": 11
+      },
+      {
+        "row": 6,
+        "col": 12
+      },
+      {
+        "row": 6,
+        "col": 14
+      },
+      {
+        "row": 7,
+        "col": 15
+      },
+      {
+        "row": 7,
+        "col": 16
+      },
+      {
+        "row": 7,
+        "col": 17
+      },
+      {
+        "row": 5,
+        "col": 16
+      },
+      {
+        "row": 4,
+        "col": 15
+      },
+      {
+        "row": 3,
+        "col": 15
+      },
+      {
+        "row": 2,
+        "col": 15
+      },
+      {
+        "row": 1,
+        "col": 15
+      },
+      {
+        "row": 4,
+        "col": 12
+      },
+      {
+        "row": 4,
+        "col": 13
+      },
+      {
+        "row": 6,
+        "col": 8
+      },
+      {
+        "row": 6,
+        "col": 7
+      },
+      {
+        "row": 6,
+        "col": 6
+      },
+      {
+        "row": 6,
+        "col": 4
+      },
+      {
+        "row": 7,
+        "col": 3
+      },
+      {
+        "row": 4,
+        "col": 4
+      },
+      {
+        "row": 4,
+        "col": 5
+      },
+      {
+        "row": 3,
+        "col": 2
+      },
+      {
+        "row": 4,
+        "col": 2
+      },
+      {
+        "row": 1,
+        "col": 2
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 1,
+        "col": 1
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 4,
+        "col": 9
+      }
+    ],
+    "boxes": [
+      {
+        "row": 6,
+        "col": 13
+      },
+      {
+        "row": 6,
+        "col": 5
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 6,
+          "col": 15
+        },
+        {
+          "row": 2,
+          "col": 8
+        }
+      ],
+      [
+        {
+          "row": 6,
+          "col": 2
+        },
+        {
+          "row": 7,
+          "col": 1
+        },
+        {
+          "row": 1,
+          "col": 9
+        }
+      ]
+    ]
+  },
+  "level8": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 6,
+        "col": 10,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 6,
+        "col": 8
+      },
+      {
+        "row": 7,
+        "col": 3
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 3
+      },
+      {
+        "row": 1,
+        "col": 4
+      },
+      {
+        "row": 1,
+        "col": 5
+      },
+      {
+        "row": 1,
+        "col": 6
+      },
+      {
+        "row": 1,
+        "col": 7
+      },
+      {
+        "row": 3,
+        "col": 7
+      },
+      {
+        "row": 3,
+        "col": 6
+      },
+      {
+        "row": 3,
+        "col": 5
+      },
+      {
+        "row": 3,
+        "col": 4
+      },
+      {
+        "row": 3,
+        "col": 2
+      },
+      {
+        "row": 5,
+        "col": 2
+      },
+      {
+        "row": 6,
+        "col": 2
+      },
+      {
+        "row": 7,
+        "col": 2
+      },
+      {
+        "row": 8,
+        "col": 2
+      },
+      {
+        "row": 8,
+        "col": 4
+      },
+      {
+        "row": 8,
+        "col": 5
+      },
+      {
+        "row": 8,
+        "col": 6
+      },
+      {
+        "row": 8,
+        "col": 7
+      },
+      {
+        "row": 11,
+        "col": 3
+      },
+      {
+        "row": 10,
+        "col": 3
+      },
+      {
+        "row": 7,
+        "col": 6
+      },
+      {
+        "row": 6,
+        "col": 4
+      },
+      {
+        "row": 6,
+        "col": 5
+      },
+      {
+        "row": 6,
+        "col": 6
+      },
+      {
+        "row": 6,
+        "col": 7
+      },
+      {
+        "row": 5,
+        "col": 5
+      },
+      {
+        "row": 5,
+        "col": 6
+      },
+      {
+        "row": 5,
+        "col": 7
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 2,
+        "col": 10
+      },
+      {
+        "row": 3,
+        "col": 10
+      },
+      {
+        "row": 4,
+        "col": 10
+      },
+      {
+        "row": 5,
+        "col": 10
+      },
+      {
+        "row": 3,
+        "col": 9
+      },
+      {
+        "row": 4,
+        "col": 9
+      },
+      {
+        "row": 7,
+        "col": 10
+      },
+      {
+        "row": 8,
+        "col": 10
+      },
+      {
+        "row": 7,
+        "col": 11
+      },
+      {
+        "row": 7,
+        "col": 12
+      },
+      {
+        "row": 7,
+        "col": 13
+      },
+      {
+        "row": 7,
+        "col": 14
+      },
+      {
+        "row": 6,
+        "col": 14
+      },
+      {
+        "row": 6,
+        "col": 15
+      },
+      {
+        "row": 6,
+        "col": 16
+      },
+      {
+        "row": 5,
+        "col": 16
+      },
+      {
+        "row": 4,
+        "col": 16
+      },
+      {
+        "row": 3,
+        "col": 16
+      },
+      {
+        "row": 3,
+        "col": 12
+      },
+      {
+        "row": 4,
+        "col": 12
+      },
+      {
+        "row": 5,
+        "col": 12
+      },
+      {
+        "row": 5,
+        "col": 14
+      },
+      {
+        "row": 3,
+        "col": 13
+      },
+      {
+        "row": 3,
+        "col": 14
+      },
+      {
+        "row": 3,
+        "col": 15
+      },
+      {
+        "row": 3,
+        "col": 17
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 3,
+        "col": 11
+      },
+      {
+        "row": 4,
+        "col": 11
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 1,
+        "col": 9
+      },
+      {
+        "row": 2,
+        "col": 7
+      }
+    ],
+    "boxes": [
+      {
+        "row": 6,
+        "col": 9
+      },
+      {
+        "row": 4,
+        "col": 2
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 7,
+          "col": 5
+        },
+        {
+          "row": 4,
+          "col": 15
+        },
+        {
+          "row": 5,
+          "col": 15
+        }
+      ]
+    ]
+  },
+  "level9": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 8,
+        "col": 12,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 6,
+        "col": 4
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 2,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 2,
+        "col": 10
+      },
+      {
+        "row": 1,
+        "col": 12
+      },
+      {
+        "row": 2,
+        "col": 12
+      },
+      {
+        "row": 3,
+        "col": 12
+      },
+      {
+        "row": 4,
+        "col": 16
+      },
+      {
+        "row": 4,
+        "col": 17
+      },
+      {
+        "row": 6,
+        "col": 13
+      },
+      {
+        "row": 6,
+        "col": 12
+      },
+      {
+        "row": 7,
+        "col": 11
+      },
+      {
+        "row": 8,
+        "col": 11
+      },
+      {
+        "row": 8,
+        "col": 13
+      },
+      {
+        "row": 8,
+        "col": 14
+      },
+      {
+        "row": 8,
+        "col": 15
+      },
+      {
+        "row": 10,
+        "col": 15
+      },
+      {
+        "row": 10,
+        "col": 17
+      },
+      {
+        "row": 10,
+        "col": 16
+      },
+      {
+        "row": 2,
+        "col": 5
+      },
+      {
+        "row": 3,
+        "col": 5
+      },
+      {
+        "row": 4,
+        "col": 5
+      },
+      {
+        "row": 2,
+        "col": 1
+      },
+      {
+        "row": 2,
+        "col": 2
+      },
+      {
+        "row": 2,
+        "col": 3
+      },
+      {
+        "row": 4,
+        "col": 3
+      },
+      {
+        "row": 5,
+        "col": 3
+      },
+      {
+        "row": 4,
+        "col": 1
+      },
+      {
+        "row": 6,
+        "col": 5
+      },
+      {
+        "row": 7,
+        "col": 3
+      },
+      {
+        "row": 7,
+        "col": 2
+      },
+      {
+        "row": 7,
+        "col": 1
+      },
+      {
+        "row": 8,
+        "col": 3
+      },
+      {
+        "row": 10,
+        "col": 3
+      },
+      {
+        "row": 11,
+        "col": 3
+      },
+      {
+        "row": 3,
+        "col": 10
+      },
+      {
+        "row": 3,
+        "col": 8
+      },
+      {
+        "row": 3,
+        "col": 11
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 3,
+        "col": 17
+      },
+      {
+        "row": 6,
+        "col": 17
+      },
+      {
+        "row": 10,
+        "col": 1
+      },
+      {
+        "row": 1,
+        "col": 1
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 1,
+        "col": 9
+      },
+      {
+        "row": 3,
+        "col": 9
+      },
+      {
+        "row": 2,
+        "col": 9
+      },
+      {
+        "row": 7,
+        "col": 4
+      }
+    ],
+    "boxes": [
+      {
+        "row": 4,
+        "col": 12
+      },
+      {
+        "row": 5,
+        "col": 12
+      },
+      {
+        "row": 8,
+        "col": 16
+      },
+      {
+        "row": 9,
+        "col": 15
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 4,
+          "col": 2
+        },
+        {
+          "row": 3,
+          "col": 3
+        },
+        {
+          "row": 2,
+          "col": 4
+        },
+        {
+          "row": 1,
+          "col": 3
+        },
+        {
+          "row": 9,
+          "col": 3
+        }
+      ],
+      [
+        {
+          "row": 9,
+          "col": 12
+        },
+        {
+          "row": 6,
+          "col": 14
+        },
+        {
+          "row": 6,
+          "col": 15
+        },
+        {
+          "row": 5,
+          "col": 14
+        }
+      ]
+    ]
+  },
+  "level10": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 3,
+        "col": 10,
+        "direction": "right"
+      },
+      {
+        "row": 4,
+        "col": 16,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 9,
+        "col": 7
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 2,
+        "col": 10
+      },
+      {
+        "row": 2,
+        "col": 11
+      },
+      {
+        "row": 1,
+        "col": 5
+      },
+      {
+        "row": 2,
+        "col": 4
+      },
+      {
+        "row": 3,
+        "col": 3
+      },
+      {
+        "row": 4,
+        "col": 3
+      },
+      {
+        "row": 5,
+        "col": 3
+      },
+      {
+        "row": 6,
+        "col": 3
+      },
+      {
+        "row": 7,
+        "col": 4
+      },
+      {
+        "row": 8,
+        "col": 3
+      },
+      {
+        "row": 10,
+        "col": 4
+      },
+      {
+        "row": 10,
+        "col": 5
+      },
+      {
+        "row": 8,
+        "col": 6
+      },
+      {
+        "row": 7,
+        "col": 6
+      },
+      {
+        "row": 6,
+        "col": 6
+      },
+      {
+        "row": 5,
+        "col": 5
+      },
+      {
+        "row": 8,
+        "col": 8
+      },
+      {
+        "row": 7,
+        "col": 8
+      },
+      {
+        "row": 6,
+        "col": 8
+      },
+      {
+        "row": 5,
+        "col": 8
+      },
+      {
+        "row": 4,
+        "col": 8
+      },
+      {
+        "row": 4,
+        "col": 9
+      },
+      {
+        "row": 4,
+        "col": 10
+      },
+      {
+        "row": 4,
+        "col": 11
+      },
+      {
+        "row": 7,
+        "col": 15
+      },
+      {
+        "row": 6,
+        "col": 16
+      },
+      {
+        "row": 5,
+        "col": 16
+      },
+      {
+        "row": 3,
+        "col": 12
+      },
+      {
+        "row": 4,
+        "col": 12
+      },
+      {
+        "row": 9,
+        "col": 3
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 4,
+        "col": 15
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 2,
+        "col": 9
+      }
+    ],
+    "boxes": [
+      {
+        "row": 4,
+        "col": 6
+      },
+      {
+        "row": 3,
+        "col": 6
+      },
+      {
+        "row": 9,
+        "col": 6
+      },
+      {
+        "row": 2,
+        "col": 13
+      },
+      {
+        "row": 3,
+        "col": 15
+      },
+      {
+        "row": 4,
+        "col": 14
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 10,
+          "col": 6
+        },
+        {
+          "row": 3,
+          "col": 9
+        }
+      ],
+      [
+        {
+          "row": 5,
+          "col": 15
+        },
+        {
+          "row": 5,
+          "col": 14
+        },
+        {
+          "row": 5,
+          "col": 13
+        },
+        {
+          "row": 8,
+          "col": 16
+        },
+        {
+          "row": 8,
+          "col": 17
+        }
+      ]
+    ]
+  },
+  "level11": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 7,
+        "col": 4,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 3,
+        "col": 14
+      },
+      {
+        "row": 3,
+        "col": 16
+      },
+      {
+        "row": 9,
+        "col": 13
+      },
+      {
+        "row": 8,
+        "col": 3
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 2,
+        "col": 8
+      },
+      {
+        "row": 2,
+        "col": 10
+      },
+      {
+        "row": 2,
+        "col": 16
+      },
+      {
+        "row": 2,
+        "col": 14
+      },
+      {
+        "row": 4,
+        "col": 14
+      },
+      {
+        "row": 4,
+        "col": 16
+      },
+      {
+        "row": 9,
+        "col": 14
+      },
+      {
+        "row": 9,
+        "col": 15
+      },
+      {
+        "row": 10,
+        "col": 16
+      },
+      {
+        "row": 11,
+        "col": 15
+      },
+      {
+        "row": 11,
+        "col": 14
+      },
+      {
+        "row": 7,
+        "col": 13
+      },
+      {
+        "row": 3,
+        "col": 3
+      },
+      {
+        "row": 5,
+        "col": 4
+      },
+      {
+        "row": 4,
+        "col": 6
+      },
+      {
+        "row": 5,
+        "col": 6
+      },
+      {
+        "row": 6,
+        "col": 5
+      },
+      {
+        "row": 8,
+        "col": 5
+      },
+      {
+        "row": 7,
+        "col": 5
+      },
+      {
+        "row": 8,
+        "col": 4
+      },
+      {
+        "row": 9,
+        "col": 1
+      },
+      {
+        "row": 11,
+        "col": 1
+      },
+      {
+        "row": 11,
+        "col": 2
+      },
+      {
+        "row": 10,
+        "col": 6
+      },
+      {
+        "row": 10,
+        "col": 7
+      },
+      {
+        "row": 10,
+        "col": 5
+      },
+      {
+        "row": 11,
+        "col": 3
+      },
+      {
+        "row": 11,
+        "col": 5
+      },
+      {
+        "row": 11,
+        "col": 4
+      },
+      {
+        "row": 1,
+        "col": 14
+      },
+      {
+        "row": 1,
+        "col": 16
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 10,
+        "col": 15
+      },
+      {
+        "row": 2,
+        "col": 1
+      },
+      {
+        "row": 2,
+        "col": 2
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 1,
+        "col": 9
+      },
+      {
+        "row": 2,
+        "col": 9
+      },
+      {
+        "row": 3,
+        "col": 10
+      }
+    ],
+    "boxes": [
+      {
+        "row": 4,
+        "col": 17
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 2,
+          "col": 15
+        },
+        {
+          "row": 11,
+          "col": 14
+        }
+      ],
+      [
+        {
+          "row": 11,
+          "col": 1
+        },
+        {
+          "row": 3,
+          "col": 13
+        },
+        {
+          "row": 3,
+          "col": 17
+        }
+      ]
+    ]
+  },
+  "level12": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 5,
+        "col": 12,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 6,
+        "col": 5
+      },
+      {
+        "row": 9,
+        "col": 7
+      },
+      {
+        "row": 2,
+        "col": 10
+      },
+      {
+        "row": 2,
+        "col": 15
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 1,
+        "col": 1
+      },
+      {
+        "row": 2,
+        "col": 1
+      },
+      {
+        "row": 3,
+        "col": 1
+      },
+      {
+        "row": 4,
+        "col": 1
+      },
+      {
+        "row": 1,
+        "col": 3
+      },
+      {
+        "row": 3,
+        "col": 3
+      },
+      {
+        "row": 4,
+        "col": 3
+      },
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 4,
+        "col": 9
+      },
+      {
+        "row": 4,
+        "col": 8
+      },
+      {
+        "row": 4,
+        "col": 7
+      },
+      {
+        "row": 9,
+        "col": 5
+      },
+      {
+        "row": 7,
+        "col": 3
+      },
+      {
+        "row": 2,
+        "col": 13
+      },
+      {
+        "row": 3,
+        "col": 14
+      },
+      {
+        "row": 3,
+        "col": 11
+      },
+      {
+        "row": 8,
+        "col": 15
+      },
+      {
+        "row": 9,
+        "col": 13
+      },
+      {
+        "row": 5,
+        "col": 11
+      },
+      {
+        "row": 6,
+        "col": 12
+      },
+      {
+        "row": 5,
+        "col": 13
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 4,
+        "col": 14
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 5,
+        "col": 6
+      },
+      {
+        "row": 3,
+        "col": 2
+      }
+    ],
+    "boxes": [
+      {
+        "row": 4,
+        "col": 6
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 2,
+          "col": 12
+        },
+        {
+          "row": 4,
+          "col": 2
+        }
+      ],
+      [
+        {
+          "row": 1,
+          "col": 2
+        },
+        {
+          "row": 1,
+          "col": 9
+        },
+        {
+          "row": 4,
+          "col": 13
+        }
+      ]
+    ]
+  },
+  "level13": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 3,
+        "col": 4,
+        "direction": "right"
+      },
+      {
+        "row": 8,
+        "col": 12,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 1,
+        "col": 2
+      },
+      {
+        "row": 5,
+        "col": 6
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 2,
+        "col": 3
+      },
+      {
+        "row": 3,
+        "col": 2
+      },
+      {
+        "row": 4,
+        "col": 2
+      },
+      {
+        "row": 5,
+        "col": 2
+      },
+      {
+        "row": 6,
+        "col": 2
+      },
+      {
+        "row": 7,
+        "col": 2
+      },
+      {
+        "row": 4,
+        "col": 3
+      },
+      {
+        "row": 4,
+        "col": 4
+      },
+      {
+        "row": 4,
+        "col": 5
+      },
+      {
+        "row": 3,
+        "col": 5
+      },
+      {
+        "row": 3,
+        "col": 7
+      },
+      {
+        "row": 4,
+        "col": 7
+      },
+      {
+        "row": 6,
+        "col": 3
+      },
+      {
+        "row": 6,
+        "col": 4
+      },
+      {
+        "row": 6,
+        "col": 5
+      },
+      {
+        "row": 7,
+        "col": 5
+      },
+      {
+        "row": 7,
+        "col": 4
+      },
+      {
+        "row": 8,
+        "col": 2
+      },
+      {
+        "row": 9,
+        "col": 2
+      },
+      {
+        "row": 9,
+        "col": 5
+      },
+      {
+        "row": 9,
+        "col": 4
+      },
+      {
+        "row": 9,
+        "col": 3
+      },
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 4,
+        "col": 17
+      },
+      {
+        "row": 4,
+        "col": 15
+      },
+      {
+        "row": 4,
+        "col": 14
+      },
+      {
+        "row": 5,
+        "col": 15
+      },
+      {
+        "row": 6,
+        "col": 15
+      },
+      {
+        "row": 9,
+        "col": 13
+      },
+      {
+        "row": 9,
+        "col": 14
+      },
+      {
+        "row": 9,
+        "col": 15
+      },
+      {
+        "row": 7,
+        "col": 11
+      },
+      {
+        "row": 8,
+        "col": 11
+      },
+      {
+        "row": 9,
+        "col": 12
+      },
+      {
+        "row": 6,
+        "col": 13
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 5,
+        "col": 3
+      },
+      {
+        "row": 5,
+        "col": 4
+      },
+      {
+        "row": 1,
+        "col": 7
+      },
+      {
+        "row": 5,
+        "col": 14
+      },
+      {
+        "row": 4,
+        "col": 16
+      },
+      {
+        "row": 5,
+        "col": 16
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 5,
+        "col": 5
+      },
+      {
+        "row": 6,
+        "col": 6
+      },
+      {
+        "row": 8,
+        "col": 3
+      },
+      {
+        "row": 8,
+        "col": 4
+      },
+      {
+        "row": 8,
+        "col": 5
+      },
+      {
+        "row": 3,
+        "col": 16
+      }
+    ],
+    "boxes": [
+      {
+        "row": 6,
+        "col": 11
+      },
+      {
+        "row": 7,
+        "col": 10
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 7,
+          "col": 12
+        },
+        {
+          "row": 8,
+          "col": 1
+        }
+      ],
+      [
+        {
+          "row": 7,
+          "col": 3
+        },
+        {
+          "row": 1,
+          "col": 9
+        }
+      ]
+    ]
+  },
+  "level14": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 9,
+        "col": 3,
+        "direction": "right"
+      },
+      {
+        "row": 2,
+        "col": 11,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 2,
+        "col": 4
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 2,
+        "col": 10
+      },
+      {
+        "row": 3,
+        "col": 11
+      },
+      {
+        "row": 3,
+        "col": 12
+      },
+      {
+        "row": 3,
+        "col": 13
+      },
+      {
+        "row": 3,
+        "col": 14
+      },
+      {
+        "row": 1,
+        "col": 14
+      },
+      {
+        "row": 1,
+        "col": 16
+      },
+      {
+        "row": 2,
+        "col": 16
+      },
+      {
+        "row": 4,
+        "col": 16
+      },
+      {
+        "row": 5,
+        "col": 16
+      },
+      {
+        "row": 6,
+        "col": 16
+      },
+      {
+        "row": 8,
+        "col": 16
+      },
+      {
+        "row": 10,
+        "col": 16
+      },
+      {
+        "row": 10,
+        "col": 17
+      },
+      {
+        "row": 10,
+        "col": 14
+      },
+      {
+        "row": 9,
+        "col": 14
+      },
+      {
+        "row": 8,
+        "col": 14
+      },
+      {
+        "row": 5,
+        "col": 11
+      },
+      {
+        "row": 5,
+        "col": 12
+      },
+      {
+        "row": 5,
+        "col": 13
+      },
+      {
+        "row": 5,
+        "col": 14
+      },
+      {
+        "row": 6,
+        "col": 12
+      },
+      {
+        "row": 7,
+        "col": 12
+      },
+      {
+        "row": 5,
+        "col": 8
+      },
+      {
+        "row": 7,
+        "col": 8
+      },
+      {
+        "row": 6,
+        "col": 9
+      },
+      {
+        "row": 7,
+        "col": 9
+      },
+      {
+        "row": 2,
+        "col": 1
+      },
+      {
+        "row": 2,
+        "col": 2
+      },
+      {
+        "row": 3,
+        "col": 2
+      },
+      {
+        "row": 6,
+        "col": 2
+      },
+      {
+        "row": 7,
+        "col": 2
+      },
+      {
+        "row": 6,
+        "col": 3
+      },
+      {
+        "row": 6,
+        "col": 5
+      },
+      {
+        "row": 7,
+        "col": 5
+      },
+      {
+        "row": 8,
+        "col": 3
+      },
+      {
+        "row": 8,
+        "col": 4
+      },
+      {
+        "row": 10,
+        "col": 4
+      },
+      {
+        "row": 10,
+        "col": 3
+      },
+      {
+        "row": 10,
+        "col": 2
+      },
+      {
+        "row": 10,
+        "col": 1
+      },
+      {
+        "row": 11,
+        "col": 4
+      },
+      {
+        "row": 7,
+        "col": 14
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 1,
+        "col": 15
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 1,
+        "col": 9
+      }
+    ],
+    "boxes": [
+      {
+        "row": 8,
+        "col": 9
+      },
+      {
+        "row": 10,
+        "col": 15
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 9,
+          "col": 4
+        },
+        {
+          "row": 5,
+          "col": 3
+        },
+        {
+          "row": 5,
+          "col": 5
+        },
+        {
+          "row": 7,
+          "col": 15
+        }
+      ]
+    ]
+  },
+  "level15": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 3,
+        "col": 10,
+        "direction": "right"
+      },
+      {
+        "row": 2,
+        "col": 7,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 7,
+        "col": 16
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 6,
+        "col": 11
+      },
+      {
+        "row": 6,
+        "col": 10
+      },
+      {
+        "row": 6,
+        "col": 13
+      },
+      {
+        "row": 6,
+        "col": 12
+      },
+      {
+        "row": 6,
+        "col": 14
+      },
+      {
+        "row": 6,
+        "col": 15
+      },
+      {
+        "row": 6,
+        "col": 16
+      },
+      {
+        "row": 6,
+        "col": 17
+      },
+      {
+        "row": 4,
+        "col": 10
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 2,
+        "col": 8
+      },
+      {
+        "row": 3,
+        "col": 7
+      },
+      {
+        "row": 3,
+        "col": 5
+      },
+      {
+        "row": 3,
+        "col": 6
+      },
+      {
+        "row": 3,
+        "col": 4
+      },
+      {
+        "row": 3,
+        "col": 2
+      },
+      {
+        "row": 4,
+        "col": 6
+      },
+      {
+        "row": 5,
+        "col": 6
+      },
+      {
+        "row": 6,
+        "col": 6
+      },
+      {
+        "row": 6,
+        "col": 5
+      },
+      {
+        "row": 6,
+        "col": 4
+      },
+      {
+        "row": 5,
+        "col": 3
+      },
+      {
+        "row": 11,
+        "col": 1
+      },
+      {
+        "row": 10,
+        "col": 1
+      },
+      {
+        "row": 9,
+        "col": 1
+      },
+      {
+        "row": 8,
+        "col": 1
+      },
+      {
+        "row": 7,
+        "col": 1
+      },
+      {
+        "row": 6,
+        "col": 1
+      },
+      {
+        "row": 8,
+        "col": 10
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 2,
+        "col": 1
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 5,
+        "col": 10
+      }
+    ],
+    "boxes": [
+      {
+        "row": 3,
+        "col": 9
+      },
+      {
+        "row": 10,
+        "col": 2
+      },
+      {
+        "row": 8,
+        "col": 11
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 8,
+          "col": 16
+        },
+        {
+          "row": 3,
+          "col": 3
+        },
+        {
+          "row": 3,
+          "col": 1
+        },
+        {
+          "row": 1,
+          "col": 9
+        }
+      ],
+      [
+        {
+          "row": 5,
+          "col": 17
+        },
+        {
+          "row": 2,
+          "col": 9
+        }
+      ]
+    ]
+  },
+  "level16": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 6,
+        "col": 10,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 2,
+        "col": 9
+      },
+      {
+        "row": 6,
+        "col": 6
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 3,
+        "col": 12
+      },
+      {
+        "row": 3,
+        "col": 14
+      },
+      {
+        "row": 2,
+        "col": 15
+      },
+      {
+        "row": 5,
+        "col": 10
+      },
+      {
+        "row": 6,
+        "col": 9
+      },
+      {
+        "row": 7,
+        "col": 9
+      },
+      {
+        "row": 7,
+        "col": 10
+      },
+      {
+        "row": 7,
+        "col": 11
+      },
+      {
+        "row": 8,
+        "col": 13
+      },
+      {
+        "row": 7,
+        "col": 14
+      },
+      {
+        "row": 5,
+        "col": 2
+      },
+      {
+        "row": 6,
+        "col": 5
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 5,
+        "col": 15
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 1,
+        "col": 9
+      }
+    ],
+    "boxes": [
+      {
+        "row": 9,
+        "col": 17
+      },
+      {
+        "row": 5,
+        "col": 1
+      },
+      {
+        "row": 6,
+        "col": 7
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 3,
+          "col": 15
+        },
+        {
+          "row": 2,
+          "col": 13
+        }
+      ]
+    ]
+  },
+  "level17": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 3,
+        "col": 2,
+        "direction": "right"
+      },
+      {
+        "row": 11,
+        "col": 4,
+        "direction": "right"
+      },
+      {
+        "row": 1,
+        "col": 11,
+        "direction": "left"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 3,
+        "col": 3
+      },
+      {
+        "row": 2,
+        "col": 9
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 2,
+        "col": 11
+      },
+      {
+        "row": 1,
+        "col": 6
+      },
+      {
+        "row": 2,
+        "col": 4
+      },
+      {
+        "row": 3,
+        "col": 5
+      },
+      {
+        "row": 4,
+        "col": 2
+      },
+      {
+        "row": 6,
+        "col": 2
+      },
+      {
+        "row": 6,
+        "col": 1
+      },
+      {
+        "row": 8,
+        "col": 2
+      },
+      {
+        "row": 8,
+        "col": 3
+      },
+      {
+        "row": 8,
+        "col": 4
+      },
+      {
+        "row": 8,
+        "col": 5
+      },
+      {
+        "row": 6,
+        "col": 5
+      },
+      {
+        "row": 7,
+        "col": 5
+      },
+      {
+        "row": 6,
+        "col": 7
+      },
+      {
+        "row": 7,
+        "col": 8
+      },
+      {
+        "row": 8,
+        "col": 7
+      },
+      {
+        "row": 11,
+        "col": 5
+      },
+      {
+        "row": 3,
+        "col": 12
+      },
+      {
+        "row": 4,
+        "col": 12
+      },
+      {
+        "row": 5,
+        "col": 12
+      },
+      {
+        "row": 6,
+        "col": 12
+      },
+      {
+        "row": 7,
+        "col": 12
+      },
+      {
+        "row": 8,
+        "col": 12
+      },
+      {
+        "row": 9,
+        "col": 12
+      },
+      {
+        "row": 10,
+        "col": 12
+      },
+      {
+        "row": 3,
+        "col": 13
+      },
+      {
+        "row": 3,
+        "col": 15
+      },
+      {
+        "row": 3,
+        "col": 17
+      },
+      {
+        "row": 4,
+        "col": 17
+      },
+      {
+        "row": 6,
+        "col": 15
+      },
+      {
+        "row": 7,
+        "col": 14
+      },
+      {
+        "row": 8,
+        "col": 15
+      },
+      {
+        "row": 8,
+        "col": 16
+      },
+      {
+        "row": 10,
+        "col": 15
+      },
+      {
+        "row": 11,
+        "col": 15
+      },
+      {
+        "row": 10,
+        "col": 5
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 4,
+        "col": 3
+      },
+      {
+        "row": 7,
+        "col": 7
+      },
+      {
+        "row": 8,
+        "col": 6
+      },
+      {
+        "row": 3,
+        "col": 16
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 1,
+        "col": 9
+      },
+      {
+        "row": 6,
+        "col": 6
+      },
+      {
+        "row": 2,
+        "col": 16
+      },
+      {
+        "row": 9,
+        "col": 15
+      }
+    ],
+    "boxes": [
+      {
+        "row": 9,
+        "col": 6
+      },
+      {
+        "row": 5,
+        "col": 15
+      },
+      {
+        "row": 5,
+        "col": 14
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 2,
+          "col": 17
+        },
+        {
+          "row": 9,
+          "col": 2
+        },
+        {
+          "row": 2,
+          "col": 8
+        }
+      ],
+      [
+        {
+          "row": 9,
+          "col": 5
+        },
+        {
+          "row": 2,
+          "col": 10
+        }
+      ]
+    ]
+  },
+  "level18": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 11,
+        "col": 3,
+        "direction": "right"
+      },
+      {
+        "row": 11,
+        "col": 15,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 6,
+        "col": 11
+      },
+      {
+        "row": 5,
+        "col": 8
+      },
+      {
+        "row": 2,
+        "col": 2
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 2,
+        "col": 10
+      },
+      {
+        "row": 3,
+        "col": 10
+      },
+      {
+        "row": 3,
+        "col": 9
+      },
+      {
+        "row": 3,
+        "col": 12
+      },
+      {
+        "row": 3,
+        "col": 13
+      },
+      {
+        "row": 3,
+        "col": 14
+      },
+      {
+        "row": 3,
+        "col": 15
+      },
+      {
+        "row": 3,
+        "col": 16
+      },
+      {
+        "row": 4,
+        "col": 14
+      },
+      {
+        "row": 5,
+        "col": 14
+      },
+      {
+        "row": 5,
+        "col": 13
+      },
+      {
+        "row": 6,
+        "col": 12
+      },
+      {
+        "row": 4,
+        "col": 7
+      },
+      {
+        "row": 3,
+        "col": 7
+      },
+      {
+        "row": 3,
+        "col": 6
+      },
+      {
+        "row": 4,
+        "col": 6
+      },
+      {
+        "row": 5,
+        "col": 6
+      },
+      {
+        "row": 7,
+        "col": 8
+      },
+      {
+        "row": 7,
+        "col": 4
+      },
+      {
+        "row": 7,
+        "col": 3
+      },
+      {
+        "row": 3,
+        "col": 2
+      },
+      {
+        "row": 3,
+        "col": 3
+      },
+      {
+        "row": 10,
+        "col": 3
+      },
+      {
+        "row": 11,
+        "col": 4
+      },
+      {
+        "row": 11,
+        "col": 14
+      },
+      {
+        "row": 10,
+        "col": 15
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 4,
+        "col": 9
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 3,
+        "col": 11
+      }
+    ],
+    "boxes": [
+      {
+        "row": 5,
+        "col": 11
+      },
+      {
+        "row": 4,
+        "col": 11
+      },
+      {
+        "row": 5,
+        "col": 10
+      },
+      {
+        "row": 5,
+        "col": 9
+      },
+      {
+        "row": 6,
+        "col": 9
+      },
+      {
+        "row": 3,
+        "col": 5
+      },
+      {
+        "row": 4,
+        "col": 4
+      },
+      {
+        "row": 5,
+        "col": 5
+      },
+      {
+        "row": 6,
+        "col": 6
+      },
+      {
+        "row": 7,
+        "col": 5
+      },
+      {
+        "row": 7,
+        "col": 7
+      },
+      {
+        "row": 7,
+        "col": 6
+      },
+      {
+        "row": 6,
+        "col": 2
+      },
+      {
+        "row": 5,
+        "col": 1
+      },
+      {
+        "row": 4,
+        "col": 2
+      },
+      {
+        "row": 5,
+        "col": 3
+      },
+      {
+        "row": 1,
+        "col": 4
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 5,
+          "col": 4
+        },
+        {
+          "row": 7,
+          "col": 2
+        }
+      ],
+      [
+        {
+          "row": 4,
+          "col": 13
+        },
+        {
+          "row": 2,
+          "col": 9
+        }
+      ]
+    ]
+  },
+  "level19": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 3,
+        "col": 7,
+        "direction": "right"
+      },
+      {
+        "row": 7,
+        "col": 15,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 9,
+        "col": 2
+      },
+      {
+        "row": 8,
+        "col": 3
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 3,
+        "col": 8
+      },
+      {
+        "row": 4,
+        "col": 5
+      },
+      {
+        "row": 4,
+        "col": 6
+      },
+      {
+        "row": 4,
+        "col": 7
+      },
+      {
+        "row": 6,
+        "col": 5
+      },
+      {
+        "row": 6,
+        "col": 4
+      },
+      {
+        "row": 7,
+        "col": 7
+      },
+      {
+        "row": 6,
+        "col": 8
+      },
+      {
+        "row": 8,
+        "col": 5
+      },
+      {
+        "row": 5,
+        "col": 13
+      },
+      {
+        "row": 7,
+        "col": 12
+      },
+      {
+        "row": 8,
+        "col": 12
+      },
+      {
+        "row": 8,
+        "col": 15
+      },
+      {
+        "row": 7,
+        "col": 16
+      }
+    ],
+    "dynamite": [],
+    "crackedStones": [],
+    "boxes": [
+      {
+        "row": 5,
+        "col": 2
+      },
+      {
+        "row": 6,
+        "col": 6
+      },
+      {
+        "row": 7,
+        "col": 14
+      },
+      {
+        "row": 9,
+        "col": 16
+      },
+      {
+        "row": 10,
+        "col": 6
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 3,
+          "col": 13
+        },
+        {
+          "row": 3,
+          "col": 5
+        }
+      ],
+      [
+        {
+          "row": 2,
+          "col": 13
+        },
+        {
+          "row": 6,
+          "col": 17
+        }
+      ]
+    ]
+  },
+  "level20": {
+    "player": {
+      "row": 11,
+      "col": 9
+    },
+    "exit": {
+      "row": 0,
+      "col": 9
+    },
+    "snakes": [
+      {
+        "row": 3,
+        "col": 9,
+        "direction": "right"
+      }
+    ],
+    "pushableStones": [
+      {
+        "row": 5,
+        "col": 16
+      }
+    ],
+    "fixedStones": [
+      {
+        "row": 1,
+        "col": 10
+      },
+      {
+        "row": 2,
+        "col": 10
+      },
+      {
+        "row": 1,
+        "col": 8
+      },
+      {
+        "row": 2,
+        "col": 8
+      },
+      {
+        "row": 4,
+        "col": 9
+      },
+      {
+        "row": 4,
+        "col": 8
+      },
+      {
+        "row": 4,
+        "col": 7
+      },
+      {
+        "row": 4,
+        "col": 10
+      },
+      {
+        "row": 4,
+        "col": 11
+      },
+      {
+        "row": 5,
+        "col": 11
+      },
+      {
+        "row": 5,
+        "col": 9
+      },
+      {
+        "row": 7,
+        "col": 10
+      },
+      {
+        "row": 7,
+        "col": 11
+      },
+      {
+        "row": 10,
+        "col": 11
+      },
+      {
+        "row": 10,
+        "col": 12
+      },
+      {
+        "row": 10,
+        "col": 13
+      },
+      {
+        "row": 10,
+        "col": 14
+      },
+      {
+        "row": 10,
+        "col": 15
+      },
+      {
+        "row": 10,
+        "col": 16
+      },
+      {
+        "row": 8,
+        "col": 2
+      }
+    ],
+    "dynamite": [
+      {
+        "row": 9,
+        "col": 16
+      },
+      {
+        "row": 8,
+        "col": 1
+      },
+      {
+        "row": 9,
+        "col": 1
+      }
+    ],
+    "crackedStones": [
+      {
+        "row": 1,
+        "col": 9
+      },
+      {
+        "row": 2,
+        "col": 9
+      },
+      {
+        "row": 6,
+        "col": 11
+      }
+    ],
+    "boxes": [
+      {
+        "row": 3,
+        "col": 16
+      },
+      {
+        "row": 3,
+        "col": 15
+      },
+      {
+        "row": 3,
+        "col": 14
+      },
+      {
+        "row": 3,
+        "col": 13
+      },
+      {
+        "row": 6,
+        "col": 10
+      },
+      {
+        "row": 6,
+        "col": 8
+      }
+    ],
+    "cloudFogGroups": [
+      [
+        {
+          "row": 8,
+          "col": 3
+        },
+        {
+          "row": 5,
+          "col": 7
+        }
+      ]
+    ]
+  }
+}
